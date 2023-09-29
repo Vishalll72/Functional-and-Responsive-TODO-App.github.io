@@ -1,0 +1,99 @@
+/* App.css */
+
+/* Styles for the main container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8dcff;
+}
+
+/* Styles for the center container */
+.center-container {
+  background-color: #cd9ef1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styles for the input container */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.input-box-todo {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.add-btn {
+  background-color: #7a15a3;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.add-btn:hover {
+  background-color: #c352f0;
+  transform: scale(1.05);
+}
+
+/* Styles for the to-do list items */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.list-item:hover {
+  transform: scale(1.02);
+}
+
+.list-item span {
+  cursor: pointer;
+}
+
+.fa-trash {
+  color: #7a15a3;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Optional: Add animation for the trash icon */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.list-item .fa-trash:hover {
+  color: #c352f0;
+  animation: rotate 0.5s linear;
+}
+
